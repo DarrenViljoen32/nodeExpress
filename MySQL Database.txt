@@ -1,0 +1,14 @@
+CREATE SCHEMA `friends` ;
+
+CREATE TABLE `friends`.`mates` (
+  `id` INT NOT NULL AUTO_INCREMENT,
+  `name` VARCHAR(45) NOT NULL,
+  `age` INT NOT NULL,
+  PRIMARY KEY (`id`));
+  
+INSERT INTO `friends`.`mates` (`id`, `name`, `age`) VALUES ('1', 'Jason', '25');
+INSERT INTO `friends`.`mates` (`id`, `name`, `age`) VALUES ('2', 'Shane', '24');
+INSERT INTO `friends`.`mates` (`id`, `name`, `age`) VALUES ('3', 'Jaydee', '22');
+
+select * from friends.mates;
+
